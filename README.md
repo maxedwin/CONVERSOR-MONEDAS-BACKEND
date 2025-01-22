@@ -1,33 +1,31 @@
-# Conversor de Monedas
+# Conversor de Moneda
 
 ## Descripción
 
-El **Conversor de Monedas** es una aplicación Java que permite a los usuarios convertir valores entre diferentes monedas utilizando tasas de cambio actualizadas desde una API externa. Este proyecto se diseñó para ser intuitivo y fácil de usar, soportando tanto nombres como códigos ISO 4217 de monedas para realizar las conversiones.
+El **Conversor de Divisas** es una herramienta desarrollada en Java que permite a los usuarios transformar valores entre diferentes monedas utilizando tasas de cambio actualizadas en tiempo real desde una API externa. Está diseñado para ser accesible y práctico, permitiendo el uso de nombres o códigos ISO 4217 para seleccionar las monedas.
 
-## Funcionalidades
+## Características
 
-- **Conversión de monedas**: Convierte montos entre distintas monedas basándose en las tasas de cambio actualizadas.
-- **Búsqueda por nombre o código**: Permite ingresar la moneda base y la moneda destino usando su nombre o código.
-- **Validación de entradas**: Verifica que las monedas ingresadas sean válidas y estén soportadas.
-- **Actualización dinámica de tasas de cambio**: Obtiene datos en tiempo real desde una API de tasas de cambio.
+- **Transformación de divisas**: Realiza conversiones de montos basándose en tasas de cambio actualizadas dinámicamente.
+- **Compatibilidad con nombres y códigos**: Permite identificar monedas mediante su nombre común o su código ISO.
+- **Validación de datos ingresados**: Asegura que las monedas seleccionadas sean válidas y estén disponibles.
+- **Actualización en tiempo real**: Conecta con una API externa para garantizar datos actualizados.
 
 ## Requisitos
 
-Para ejecutar el proyecto, necesitas lo siguiente:
+Para ejecutar este proyecto, asegúrate de contar con lo siguiente:
 
 - **Java**: Versión 8 o superior.
 - **Dependencias**:
-  - [Gson](https://github.com/google/gson): Para manejar JSON.
-- **Acceso a Internet**: Para conectarse a la API de tasas de cambio.
+  - [Gson](https://github.com/google/gson): Biblioteca para procesar datos JSON.
+- **Conexión a Internet**: Es necesaria para realizar las consultas a la API.
 
 ## Instalación
 
-1. Clona este repositorio o descarga los archivos del proyecto:
+1. Clona el repositorio o descarga los archivos del proyecto:
 
    ```bash
    git clone https://github.com/Miguel-Ghost/Conversor-de-Monedas.git
-   ```
-
 2. Asegúrate de que las dependencias estén disponibles en tu proyecto. Si usas un administrador de dependencias como Maven, incluye `Gson` en tu archivo `pom.xml`:
 
    ```xml
@@ -55,12 +53,16 @@ Para ejecutar el proyecto, necesitas lo siguiente:
 
 ## Ejemplo de Ejecución
 
-![image](https://github.com/user-attachments/assets/5470e2bb-ca63-4759-a5ab-237f131ca734)
+Moneda origen: USD  
+Moneda destino: EUR  
+Monto: 150  
+Resultado: 138.45 EUR  
+
 
 
 ## API Utilizada
 
-La aplicación utiliza la API de [Exchange Rate API](https://www.exchangerate-api.com/) para obtener las tasas de cambio actualizadas.
+La API UTILIZADA ES [Exchange Rate API](https://www.exchangerate-api.com/) para obtener las tasas de cambio actualizadas.
 
 ## Estructura del Proyecto
 
